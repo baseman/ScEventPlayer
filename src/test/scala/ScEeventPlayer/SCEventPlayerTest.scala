@@ -56,7 +56,7 @@ class PlayerTest extends FunSuite{
     assert(model.boolVal === true)
     assert(model.latestVersion === 1)
 
-    player.PlayFor(model, new StubChangeEvent(id, 1));
+    player.PlayFor(model, List(new StubChangeEvent(id, 1)));
 
     assert(model.boolVal === true)
     assert(model.latestVersion === 1)
